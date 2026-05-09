@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata Automated Trading System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #38bdf8, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-400 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold text-white tracking-tight">HATA <span class="text-brand-400">SYS</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="hover:text-white transition-colors duration-300 font-medium text-sm">Features</a>
+                        <a href="#strategies" class="hover:text-white transition-colors duration-300 font-medium text-sm">Strategies</a>
+                        <a href="#workflow" class="hover:text-white transition-colors duration-300 font-medium text-sm">Workflow</a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border border-white/10">Client Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-500/20 blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/20 blur-[120px]"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-brand-400 mr-2 animate-pulse"></span>
+                <span class="text-xs font-medium text-slate-300 uppercase tracking-wider">System Operational</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight">
+                Automated 24/7 <br/>
+                <span class="text-gradient">Cryptocurrency Trading</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10 font-light leading-relaxed">
+                Algorithmic precision, institutional-grade risk management, and real-time monitoring tailored exclusively for the Hata Exchange's BTC/MYR markets.
+            </p>
+            
+            <div class="flex justify-center gap-4">
+                <a href="#features" class="bg-white text-slate-900 px-8 py-3.5 rounded-full font-semibold hover:bg-slate-200 transition-colors duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    Explore Platform
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Benefits Section -->
+    <section id="features" class="py-24 relative border-t border-white/5 bg-slate-900/50 flex flex-col relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-400 text-sm font-semibold tracking-widest uppercase mb-3">Core Infrastructure</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">Engineered for Performance</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/[0.05] transition-all duration-300 group">
+                    <div class="h-12 w-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-bolt text-blue-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Algorithmic Execution</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Sub-millisecond trade execution based on pure data. Removes latency and emotional biases entirely.</p>
+                </div>
+                
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/[0.05] transition-all duration-300 group">
+                    <div class="h-12 w-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-shield-alt text-red-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Strict Risk Controls</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Dynamic stop-losses and hard circuit breakers protect your capital against black swan events.</p>
+                </div>
+                
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/[0.05] transition-all duration-300 group">
+                    <div class="h-12 w-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-vial text-purple-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Pre-Flight Simulation</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Strategies undergo rigorous historical backtesting against massive datasets before live deployment.</p>
+                </div>
+                
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/[0.05] transition-all duration-300 group">
+                    <div class="h-12 w-12 rounded-xl bg-brand-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-chart-line text-brand-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Live Telemetry</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">A clean, stakeholder-friendly dashboard providing real-time PnL, balance data, and system health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section id="strategies" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3">
+                    <h2 class="text-brand-400 text-sm font-semibold tracking-widest uppercase mb-3">The Intelligence</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Adaptive Models</h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                        The system dynamically shifts between specialized mathematical strategies depending on current market volatility and trend conditions.
+                    </p>
+                </div>
+                <div class="md:w-2/3 space-y-6">
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border-l-4 border-l-brand-400 hover:bg-white/[0.03] transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1"><i class="fas fa-compress-arrows-alt text-brand-400 text-xl"></i></div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Micro-Dip Catcher <span class="text-xs font-normal bg-white/10 px-2 py-1 rounded text-slate-300 ml-2">Scalping</span></h4>
+                                <p class="text-slate-400 leading-relaxed text-sm lg:text-base">Exploits tiny, sudden price inefficiencies. Executes lightning-fast entries and exits, ensuring winning trades mathematically offset losing ones for slow, steady portfolio growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border-l-4 border-l-blue-400 hover:bg-white/[0.03] transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1"><i class="fas fa-chart-area text-blue-400 text-xl"></i></div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Market Correction <span class="text-xs font-normal bg-white/10 px-2 py-1 rounded text-slate-300 ml-2">Mean Reversion</span></h4>
+                                <p class="text-slate-400 leading-relaxed text-sm lg:text-base">Highly selective execution during short-term panics. Deploys capital when assets are artificially oversold, riding the inevitable price stabilization back to the moving average.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border-l-4 border-l-purple-400 hover:bg-white/[0.03] transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1"><i class="fas fa-layer-group text-purple-400 text-xl"></i></div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Liquidity Provider <span class="text-xs font-normal bg-white/10 px-2 py-1 rounded text-slate-300 ml-2">Market Maker</span></h4>
+                                <p class="text-slate-400 leading-relaxed text-sm lg:text-base">Constructs layered order books when seller momentum decelerates, capturing spreads as a stabilizing force in the market. (Maintained in reserve).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-24 relative border-t border-white/5 bg-slate-900/50 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-400 text-sm font-semibold tracking-widest uppercase mb-3">Lifecycle</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">Streamlined Operations</h3>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 relative">
+                <div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-y-1/2 z-0"></div>
+                
+                <div class="relative z-10 flex-1 glass-panel p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 border border-white/10 flex items-center justify-center text-white font-bold mb-6 ring-4 ring-slate-950">1</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Optimize</h4>
+                    <p class="text-sm text-slate-400">Run the automated sweeping simulator to lock in parameter edges.</p>
+                </div>
+                
+                <div class="relative z-10 flex-1 glass-panel p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 border border-white/10 flex items-center justify-center text-white font-bold mb-6 ring-4 ring-slate-950">2</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Monitor</h4>
+                    <p class="text-sm text-slate-400">Validate connection states and total capital placement via dashboard.</p>
+                </div>
+                
+                <div class="relative z-10 flex-1 glass-panel p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-brand-500/20 border border-brand-500/30 flex items-center justify-center text-brand-400 font-bold mb-6 ring-4 ring-slate-900 shadow-[0_0_15px_rgba(45,212,191,0.2)]">3</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Execute</h4>
+                    <p class="text-sm text-slate-400">Engage the autonomous trading engine to manage positions.</p>
+                </div>
+                
+                <div class="relative z-10 flex-1 glass-panel p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 border border-white/10 flex items-center justify-center text-white font-bold mb-6 ring-4 ring-slate-950">4</div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Review</h4>
+                    <p class="text-sm text-slate-400">Analyze automated CSV ledgers tracking gross/net ROI and exchange fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-slate-950 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-2xl font-bold text-white tracking-tight">HATA <span class="text-brand-400">SYS</span></div>
+            <p class="text-slate-500 text-sm">&copy; 2026 Hata Automated Trading System. Internal Use Only.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
